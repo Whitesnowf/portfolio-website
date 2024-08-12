@@ -1,7 +1,7 @@
 /* General Body Styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #fafafa;
+    background-color: lightgray;
     color: #333;
     margin: 0;
     padding: 0;
@@ -10,9 +10,9 @@ body {
 
 /* Container for Content */
 .container {
-    max-width: 700px;
+    max-width: 900px;
     margin: 60px auto;
-    padding: 20px;
+    padding: 30px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -107,4 +107,95 @@ h2 {
 
 .project a:hover {
     text-decoration: underline;
+}
+
+/* Project Links Container */
+.project-links {
+    margin-top: 10px;
+}
+
+/* Project Links Styling */
+.project-links a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px; /* Space between links */
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+/* Specific Styling for Second Link */
+.view-model {
+    color: #28a745; /* Use a different color for distinction if needed */
+}
+
+.project-links a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Certifications Section */
+.certifications {
+    margin-bottom: 50px;
+}
+
+.certification {
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.certification:last-child {
+    border-bottom: none;
+}
+
+.certification h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.certification p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.certification a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.certification a:hover {
+    text-decoration: underline;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    display: inline-block;
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Text color */
+    padding: 10px 15px;
+    border-radius: 25px; /* Rounded edges */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    position: fixed; /* Fixed position at the bottom right */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0.7; /* Slightly transparent */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+}
+
+.back-to-top:hover {
+    opacity: 1; /* Full opacity on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+.back-to-top:active {
+    transform: translateY(0); /* Remove lift effect when clicked */
 }

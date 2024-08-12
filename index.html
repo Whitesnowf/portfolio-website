@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lawrence Lee — Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
+<body id="top">
     <div class="container">
         <!-- Main -->
         <header>
             <h1>Lawrence Lee</h1>
-            <p>Hello, thank you for visiting my website! This is an archive of some of my current and past coursework and personal projects.</p>
+            <p id="greeting"></p>
+            <p>I am currently a third-year Land Economy student at Trinity College, University of Cambridge. My interests include learning languages, coding, long-distance running and travelling.</p>
         </header>
     
         <!-- CV Section -->
@@ -26,15 +28,15 @@
 
             <div class="project">
                 <h3>Real Estate Finance Dissertation</h3>
-                <a href="Files/Dissertation.pdf" target="_blank">View Project</a>
-                <p>A</p>
+                <a href="Files/Draft.pdf" target="_blank">View Project</a>
+                <p>I am currently planning to do my third-year dissertation on researching the location premia of houses in different stations along a given London Underground Line. The idea is that more centrally-located areas should command higher prices, and this study aims to quantify the amount and compare them both within and between popular TFL Lines.</p>
             </div>
 
-            <div class="project">
+<!--            <div class="project">
                 <h3>Real Estate Finance Acquisition Model</h3>
                 <a href="Files/Dissertation.pdf" target="_blank">View Project</a>
-                <p>Brief description of another current project, what you are learning, and any tools or technologies you are using.</p>
-            </div>
+                <p>Valuation of a fictitous real estate project using a list of assumptions. The aim is to familiarise myself with real estate financial modelling on Excel.</p>
+            </div> -->
         </section>
         
         <!-- Past Projects Section -->        
@@ -43,30 +45,53 @@
             
             <div class="project">
                 <h3>Microsoft Stock Pitch</h3>
-                <a href="Files/Microsoft Stock Pitch.pdf" target="_blank">View PowerPoint</a>
-                <a href="Files/Microsoft Relative Valuation Model.xlsx" target="_blank">View Model</a>
+                <div class="project-links">
+                    <a href="Files/Microsoft Stock Pitch.pdf" class="view-project">View PowerPoint</a>
+                    <a href="Files/Microsoft Relative Valuation Model.xlsx" class="view-model">View Model</a>
+                </div>
                 <p>Long recommendation for Microsoft.</p>
             </div>
 
             <div class="project">
-                <h3>Microsoft Stock Pitch</h3>
-                <a href="Files/Nvidia Stock Pitch.pdf" target="_blank">View PowerPoint</a>
+                <h3>Nvidia Stock Pitch</h3>
+                <div class="project-links">
+                    <a href="Files/Nvidia Stock Pitch.pdf" class="view-project">View PowerPoint</a>
+                </div>
                 <p>Long recommendation for Nvidia.</p>
             </div>
 
             <div class="project">
                 <h3>S&P 500 Prediction</h3>
-                <a href="Files/CamSIF S&P 500 Task.pdf" target="_blank">View Project</a>
-                <a href="Files/S&P 500 Regression Model.xlsx" target="_blank">View Model</a>
-                <p>As part of the CamSIF application process, we were required to estimate the value of the S&P 500 index at close of 31 December 2024. The project was limited to two pages, which was definitely the most challenging aspect. I decided to use a linear regression approach and averaged the outputs of a simple- and multi-linear equation. Looking back, I could have also used a cashflow-based approach.</p>
+                <div class="project-links">
+                    <a href="Files/CamSIF S&P 500 Task.pdf" class="view-project">View Project</a>
+                    <a href="Files/S&P 500 Regression Model.xlsx" class="view-model">View Model</a>
+                </div>
+                <p>As part of the CamSIF application process, we were required to estimate the value of the S&P 500 index at close of 31 December 2024. The project was limited to two pages, which was definitely its most challenging aspect. I decided to use a linear regression approach and averaged the outputs of a simple- and multi-linear equation. Looking back, I could have also used a cashflow-based approach.</p>
             </div>
 
-            <div class="project">
-                <h3>Policy Brief</h3>
-                <a href="Files/350-Project4-2023.pdf" target="_blank">View Project</a>
-                <p>First-year coursework on suggesting policies that could help a fictious mayor help their town's residents deal with high energy prices. My idea was 1) to inform residents on energy-saving habits and methods and 2) using monetary incentives to reinforce the first limb. I achieved 70.</p>
+        <!-- Certifications -->
+        <section class="certifications">
+            <h2>Course Certifications</h2>
+            <div class="certification">
+                <h3>CFI Introduction to Business Valuation</h3>
+                <a href="https://www.credential.net/b61e559e-9ac5-477a-b87b-0f4947b2786d" target="_blank" class="view-certification">View Certification</a>
+                <p>Brief description of the certification.</p>
+            </div>
+
+            <div class="certification">
+                <h3>CFI Accounting Fundamentals</h3>
+                <a href="https://www.credential.net/8d7d3f2d-1290-4c99-bb21-c2d8edfedd5d" target="_blank" class="view-certification">View Certification</a>
+                <p>Brief description of the certification.</p>
+            </div>
+
+            <div class="certification">
+                <h3>CFI Excel Fundamentals – Formulas for Finance</h3>
+                <a href="https://www.credential.net/1bb243e9-96a0-4ddf-a56d-f54d62f237a2" target="_blank" class="view-certification">View Certification</a>
+                <p>Brief description of the certification.</p>
             </div>
         </section>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top">Back to Top</a>
     </div>
 </body>
 </html>

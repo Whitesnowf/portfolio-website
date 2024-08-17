@@ -126,11 +126,6 @@ h2 {
     text-decoration: underline;
 }
 
-/* Specific Styling for Second Link */
-.view-model {
-    color: #28a745; /* Use a different color for distinction if needed */
-}
-
 .project-links a {
     display: inline-block;
     margin-right: 10px;

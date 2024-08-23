@@ -110,23 +110,23 @@ h2 {
 }
 
 /* Project Links Container */
-.project-links {
+.links {
     margin-top: 10px;
 }
 
 /* Project Links Styling */
-.project-links a {
+.links a {
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
     margin-right: 15px; /* Space between links */
 }
 
-.project-links a:hover {
+.links a:hover {
     text-decoration: underline;
 }
 
-.project-links a {
+.links a {
     display: inline-block;
     margin-right: 10px;
 }

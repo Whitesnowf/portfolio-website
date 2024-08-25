@@ -126,11 +126,6 @@ h2 {
     text-decoration: underline;
 }
 
-.links a {
-    display: inline-block;
-    margin-right: 10px;
-}
-
 /* Certifications Section */
 .certifications {
     margin-bottom: 50px;

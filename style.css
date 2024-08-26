@@ -45,13 +45,13 @@ h2 {
     padding-bottom: 10px;
 }
 
-/* Tooltip container */
+/* Tooltip Container */
 .tooltip {
     position: relative;
     cursor: pointer; /* Changes cursor to indicate interactivity */
 }
 
-/* Tooltip text */
+/* Tooltip Text */
 .tooltip::after {
     content: attr(data-tooltip); /* Use the content from the data-tooltip attribute */
     position: absolute;
@@ -62,7 +62,7 @@ h2 {
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
-    white-space: pre-wrap; /* Wrap text to new lines if it's too long */
+    white-space: pre-wrap; /* Wrap text to new lines if too long */
     font-size: 0.9em;
     opacity: 0; /* Make tooltip invisible by default */
     visibility: hidden; /* Hide the tooltip */
@@ -74,7 +74,7 @@ h2 {
     word-wrap: break-word; /* Ensure words break to avoid overflow */
 }
 
-/* Show the tooltip on hover */
+/* Show the Tooltip on Hover */
 .tooltip:hover::after {
     opacity: 1; /* Make tooltip visible */
     visibility: visible; /* Ensure the tooltip is shown */

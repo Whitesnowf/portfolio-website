@@ -1,7 +1,7 @@
 /* General Body Styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: lightgray;
+    background-color: lightgrey;
     color: #333;
     margin: 0;
     padding: 0;
@@ -43,6 +43,39 @@ h2 {
     margin-bottom: 25px;
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    cursor: pointer; /* Changes cursor to indicate interactivity */
+}
+
+/* Tooltip text */
+.tooltip::after {
+    content: attr(data-tooltip); /* Use the content from the data-tooltip attribute */
+    position: absolute;
+    top: 120%; /* Adjust space between tooltip below text */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: grey;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-size: 0.9em;
+    opacity: 0; /* Make tooltip invisible by default */
+    visibility: hidden; /* Hide the tooltip */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10; /* Ensure it appears above other elements */
+    pointer-events: none; /* Prevent mouse interaction with tooltip */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Show the tooltip on hover */
+.tooltip:hover::after {
+    opacity: 1; /* Make tooltip visible */
+    visibility: visible; /* Ensure the tooltip is shown */
 }
 
 /* CV Section */

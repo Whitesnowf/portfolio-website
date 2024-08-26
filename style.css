@@ -55,7 +55,7 @@ h2 {
 .tooltip::after {
     content: attr(data-tooltip); /* Use the content from the data-tooltip attribute */
     position: absolute;
-    top: 120%; /* Adjust space between tooltip below text */
+    top: 125%; /* Adjust space between tooltip below text */
     left: 50%;
     transform: translateX(-50%);
     background-color: grey;

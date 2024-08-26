@@ -62,7 +62,7 @@ h2 {
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
-    word-wrap: break-word; /* Wraps the text */
+    white-space: pre-wrap; /* Wrap text to new lines if it's too long */
     font-size: 0.9em;
     opacity: 0; /* Make tooltip invisible by default */
     visibility: hidden; /* Hide the tooltip */
@@ -70,6 +70,8 @@ h2 {
     z-index: 10; /* Ensure it appears above other elements */
     pointer-events: none; /* Prevent mouse interaction with tooltip */
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    max-width: 250px; /* Prevent the tooltip from getting too wide */
+    word-wrap: break-word; /* Ensure words break to avoid overflow */
 }
 
 /* Show the tooltip on hover */

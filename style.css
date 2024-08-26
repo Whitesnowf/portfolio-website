@@ -62,7 +62,7 @@ h2 {
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
-    white-space: nowrap; /* Prevent text from wrapping */
+    word-wrap: break-word; /* Wraps the text */
     font-size: 0.9em;
     opacity: 0; /* Make tooltip invisible by default */
     visibility: hidden; /* Hide the tooltip */
